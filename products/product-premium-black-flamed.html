@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Black Flamed Finish | Bharathi Granites</title>
+<meta name="description" content="Premium Black Flamed Finish Granite with rough textured surface. Ideal for outdoor applications with exceptional slip resistance.">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/search-styles.css">
+<style>
+:root{--gold:#d4af37;--black:#0b0b0b;--dark:#121212;--grey:#9a9a9a;--white:#eaeaea;--light-gold:#f4e4c1;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;line-height:1.7;font-size:18px;background:linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.98)),url("../images/black-granite.png");background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;color:#333;}
+header{padding:20px 60px;background:rgba(234,234,234,0.98);position:sticky;top:0;z-index:100;border-bottom:2px solid rgba(212,175,55,0.3);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,0.1);}
+nav{display:flex;justify-content:space-between;align-items:center;}
+.logo{font-family:'Alex Brush',cursive;font-size:48px;color:#d4af37;text-decoration:none;text-shadow:2px 2px 4px rgba(0,0,0,0.1);transition:all 0.3s ease;}
+.logo:hover{transform:scale(1.05);color:#c49b2e;}
+nav ul{display:flex;gap:35px;list-style:none;}
+nav ul li a{color:#333;text-decoration:none;font-size:17px;font-weight:500;transition:all 0.3s ease;position:relative;padding:8px 0;}
+nav ul li a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:width 0.3s ease;}
+nav ul li a:hover{color:var(--gold);}
+nav ul li a:hover::after{width:100%;}
+
+.mobile-menu-toggle{
+  display:none;
+  font-size:28px;
+  color:#333;
+  cursor:pointer;
+}
+.breadcrumb{padding:25px 60px;background:rgba(250,250,250,0.8);border-bottom:1px solid rgba(212,175,55,0.2);}
+.breadcrumb a{color:#666;text-decoration:none;font-size:15px;transition:color 0.3s ease;}
+.breadcrumb a:hover{color:var(--gold);}
+.breadcrumb span{color:#999;margin:0 10px;}
+.breadcrumb .current{color:var(--gold);font-weight:600;}
+.product-detail{padding:80px 60px;max-width:1400px;margin:0 auto;}
+.product-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-bottom:80px;}
+.product-images{position:sticky;top:120px;height:fit-content;}
+.main-image{width:100%;height:500px;object-fit:cover;border-radius:15px;border:3px solid rgba(212,175,55,0.3);box-shadow:0 10px 40px rgba(0,0,0,0.15);margin-bottom:20px;background:#fff;padding:20px;}
+
+.mobile-menu-toggle{
+  display:none;
+  font-size:28px;
+  color:#333;
+  cursor:pointer;
+}
+.thumbnail-images{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;}
+.thumbnail{width:100%;height:100px;object-fit:cover;border-radius:8px;border:2px solid rgba(212,175,55,0.2);cursor:pointer;transition:all 0.3s ease;background:#fff;padding:10px;}
+.thumbnail:hover,.thumbnail.active{border-color:var(--gold);box-shadow:0 4px 15px rgba(212,175,55,0.4);transform:translateY(-3px);}
+.product-info h1{font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#222;margin-bottom:20px;line-height:1.3;}
+.product-rating{display:flex;align-items:center;gap:10px;margin-bottom:25px;}
+.stars{color:var(--gold);font-size:18px;}
+.rating-text{color:#666;font-size:15px;}
+.product-price{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:var(--gold);margin-bottom:30px;}
+.product-description{font-size:17px;color:#555;line-height:1.9;margin-bottom:35px;padding-bottom:35px;border-bottom:1px solid rgba(212,175,55,0.2);}
+.product-features{margin-bottom:35px;}
+.product-features h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--gold);margin-bottom:20px;font-weight:600;}
+.feature-list{display:grid;gap:15px;}
+.feature-item{display:flex;align-items:center;gap:12px;font-size:16px;color:555;}
+.feature-item i{color:var(--gold);font-size:18px;width:25px;}
+.size-selection{margin-bottom:35px;}
+.size-selection h3{font-family:'Playfair Display',serif;font-size:22px;color:#333;margin-bottom:20px;font-weight:600;}
+.size-options{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;}
+.size-option{padding:18px;border:2px solid rgba(212,175,55,0.3);border-radius:10px;cursor:pointer;transition:all 0.3s ease;text-align:center;background:#fff;}
+.size-option:hover{border-color:var(--gold);background:rgba(212,175,55,0.05);transform:translateY(-3px);box-shadow:0 4px 15px rgba(212,175,55,0.2);}
+.size-option.selected{border-color:var(--gold);background:rgba(212,175,55,0.1);box-shadow:0 4px 15px rgba(212,175,55,0.3);}
+.size-name{font-weight:600;color:#333;font-size:16px;}
+.cta-buttons{display:flex;gap:20px;margin-bottom:35px;}
+.btn-primary,.btn-secondary{flex:1;padding:18px 35px;border:none;border-radius:10px;font-size:17px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;cursor:pointer;transition:all 0.3s ease;display:flex;align-items:center;justify-content:center;gap:10px;}
+.btn-primary{background:var(--gold);color:#000;border:2px solid var(--gold);box-shadow:0 4px 15px rgba(212,175,55,0.3);}
+.btn-primary:hover{background:transparent;color:var(--gold);transform:translateY(-3px);box-shadow:0 6px 25px rgba(212,175,55,0.5);}
+.btn-secondary{background:transparent;color:#333;border:2px solid #ddd;}
+.btn-secondary:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,0.05);}
+.product-meta{display:grid;gap:15px;padding:30px;background:rgba(250,250,250,0.8);border-radius:12px;border:1px solid rgba(212,175,55,0.2);}
+.meta-item{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(212,175,55,0.1);font-size:15px;}
+.meta-item:last-child{border-bottom:none;}
+.meta-label{color:#666;font-weight:500;}
+.meta-value{color:#333;font-weight:600;}
+.specifications{margin-top:80px;padding:60px;background:#fff;border-radius:20px;border:2px solid rgba(212,175,55,0.2);box-shadow:0 10px 40px rgba(0,0,0,0.1);}
+.specifications h2{font-family:'Playfair Display',serif;font-size:36px;color:var(--gold);margin-bottom:40px;text-align:center;font-weight:700;}
+.spec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;}
+.spec-item{padding:25px;background:rgba(250,250,250,0.8);border-radius:12px;border:1px solid rgba(212,175,55,0.2);}
+.spec-item h4{font-family:'Playfair Display',serif;font-size:20px;color:#333;margin-bottom:12px;font-weight:600;}
+.spec-item p{color:#666;font-size:16px;line-height:1.7;}
+footer{padding:80px 60px;background:linear-gradient(135deg,#000 0%,#1a1a1a 100%);text-align:center;color:#fff;border-top:3px solid var(--gold);}
+footer h4{font-family:'Alex Brush',cursive;font-size:42px;color:var(--gold);margin-bottom:20px;}
+footer p{color:#ccc;margin:10px 0;font-size:16px;}
+.footer-content{max-width:600px;margin:0 auto;}
+.social-links{margin-top:30px;display:flex;justify-content:center;gap:25px;}
+.social-links a{color:var(--gold);font-size:24px;transition:all 0.3s ease;}
+.social-links a:hover{color:#fff;transform:translateY(-3px);}
+.copyright{margin-top:40px;padding-top:30px;border-top:1px solid rgba(212,175,55,0.2);font-size:14px;color:#888;}
+@media(max-width:968px){.product-layout{grid-template-columns:1fr;gap:50px;}.product-images{position:relative;top:0;}.spec-grid{grid-template-columns:1fr;}.cta-buttons{flex-direction:column;}}
+@media(max-width:768px){header{padding:16px 25px;}.logo{font-size:36px;}nav ul{position:fixed;top:0;right:-100%;height:100vh;width:70%;background:rgba(234,234,234,0.98);backdrop-filter:blur(10px);flex-direction:column;justify-content:center;align-items:center;gap:40px;transition:right 0.3s ease;box-shadow:-5px 0 20px rgba(0,0,0,0.1);z-index:999;}nav ul.active{right:0;}nav ul li a{font-size:20px;}.mobile-menu-toggle{display:block;z-index:1000;}.search-container{display:none;}.breadcrumb{padding:20px 25px;}.product-detail{padding:50px 25px;}.product-info h1{font-size:32px;}.product-price{font-size:28px;}.specifications{padding:40px 25px;}.specifications h2{font-size:28px;}.size-options{grid-template-columns:1fr;}footer{padding:60px 25px;}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="../index.html" class="logo">Bharathi Granites</a>
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" 
+               id="searchInput" 
+               class="search-input" 
+               placeholder="Search products or pages..."
+               autocomplete="off">
+        <i class="fas fa-search search-icon"></i>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+</div>
+<div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+    <i class="fas fa-bars"></i>
+</div>
+<ul id="mobileMenu">
+<li><a href="../index.html" onclick="closeMobileMenu()">Home</a></li>
+<li><a href="../pages/about.html" onclick="closeMobileMenu()">About</a></li>
+<li><a href="../pages/products.html" onclick="closeMobileMenu()">Products</a></li>
+<li><a href="../pages/exports.html" onclick="closeMobileMenu()">Exports</a></li>
+<li><a href="../pages/contact.html" onclick="closeMobileMenu()">Contact</a></li>
+</ul>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="../index.html"><i class="fas fa-home"></i> Home</a><span>/</span>
+<a href="../pages/products.html">Products</a><span>/</span>
+<span class="current">Premium Black Flamed Finish</span>
+</div>
+<section class="product-detail">
+<div class="product-layout">
+<div class="product-images">
+<img src="../images/Flamed.png" alt="Premium Black Flamed Finish" class="main-image" id="mainImage">
+<div class="thumbnail-images">
+<img src="../images/Flamed.png" alt="View 1" class="thumbnail active" onclick="changeImage(this)">
+<img src="../images/Premium-black.png" alt="View 2" class="thumbnail" onclick="changeImage(this)">
+<img src="../images/black-granite.png" alt="View 3" class="thumbnail" onclick="changeImage(this)">
+<img src="../images/Premium-black.png" alt="View 4" class="thumbnail" onclick="changeImage(this)">
+</div>
+</div>
+<div class="product-info">
+<h1>Premium Black Flamed Finish</h1>
+<div class="product-rating">
+<div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<span class="rating-text">(36+ Reviews)</span>
+</div>
+<div class="product-price"><i class="fas fa-tag"></i> Request Quote</div>
+<div class="product-description">
+<p>Robust Premium Black Flamed Finish Granite with rough textured surface created through thermal treatment. This durable finish offers superior slip resistance and weather resistance, making it the ideal choice for outdoor applications, pool decks, driveways, and high-traffic commercial areas where safety and longevity are paramount.</p>
+</div>
+<div class="product-features">
+<h3><i class="fas fa-gem"></i> Key Features</h3>
+<div class="feature-list">
+<div class="feature-item"><i class="fas fa-check-circle"></i><span>Rough textured surface from thermal treatment</span></div>
+<div class="feature-item"><i class="fas fa-check-circle"></i><span>Superior slip resistance for safety</span></div>
+<div class="feature-item"><i class="fas fa-check-circle"></i><span>Ideal for outdoor and wet environments</span></div>
+<div class="feature-item"><i class="fas fa-check-circle"></i><span>Excellent weather and frost resistance</span></div>
+<div class="feature-item"><i class="fas fa-check-circle"></i><span>Perfect for pool decks and driveways</span></div>
+<div class="feature-item"><i class="fas fa-check-circle"></i><span>Extremely durable and long-lasting</span></div>
+</div>
+</div>
+<div class="size-selection">
+<h3>Available Sizes</h3>
+<div class="size-options">
+<div class="size-option"><div class="size-name">305 × 305 mm</div></div>
+<div class="size-option"><div class="size-name">400 × 400 mm</div></div>
+<div class="size-option"><div class="size-name">600 × 600 mm</div></div>
+<div class="size-option"><div class="size-name">800 × 800 mm</div></div>
+</div>
+</div>
+<div class="cta-buttons">
+<button class="btn-primary" onclick="window.location.href='../pages/contact.html'"><i class="fas fa-paper-plane"></i> Request Quote</button>
+<button class="btn-secondary" onclick="window.location.href='tel:+91XXXXXXXXXX'"><i class="fas fa-phone"></i> Call Us</button>
+</div>
+<div class="product-meta">
+<div class="meta-item"><span class="meta-label">Material:</span><span class="meta-value">Premium Black Granite</span></div>
+<div class="meta-item"><span class="meta-label">Finish:</span><span class="meta-value">Thermal Flamed</span></div>
+<div class="meta-item"><span class="meta-label">Origin:</span><span class="meta-value">India</span></div>
+<div class="meta-item"><span class="meta-label">Application:</span><span class="meta-value">Outdoor, Pool Decks & Driveways</span></div>
+<div class="meta-item"><span class="meta-label">SKU:</span><span class="meta-value">BG-FLAMED-007</span></div>
+</div>
+</div>
+</div>
+<div class="specifications">
+<h2>Technical Specifications</h2>
+<div class="spec-grid">
+<div class="spec-item">
+<h4><i class="fas fa-cube"></i> Material Properties</h4>
+<p><strong>Type:</strong> Natural Premium Granite<br><strong>Color:</strong> Deep Black<br><strong>Hardness:</strong> 6-7 Mohs Scale<br><strong>Density:</strong> 2.63 - 2.75 g/cm³</p>
+</div>
+<div class="spec-item">
+<h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+<p><strong>Standard Sizes:</strong><br>305 × 305 mm<br>400 × 400 mm<br>600 × 600 mm<br>800 × 800 mm<br><strong>Custom sizes available</strong></p>
+</div>
+<div class="spec-item">
+<h4><i class="fas fa-shield-alt"></i> Durability</h4>
+<p><strong>Water Absorption:</strong> < 0.4%<br><strong>Frost Resistance:</strong> Exceptional<br><strong>Slip Resistance:</strong> Very High<br><strong>Lifespan:</strong> 80+ years</p>
+</div>
+<div class="spec-item">
+<h4><i class="fas fa-tools"></i> Installation & Care</h4>
+<p><strong>Installation:</strong> Professional recommended<br><strong>Maintenance:</strong> Minimal maintenance<br><strong>Cleaning:</strong> Pressure washing safe<br><strong>Sealing:</strong> Optional, recommended yearly</p>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<h4>Bharathi Granites</h4>
+<p><i class="fas fa-envelope"></i> Email: info@bharathigranites.com</p>
+<p><i class="fas fa-phone"></i> Phone: +91 XXXX XXXXXX</p>
+<p><i class="fas fa-map-marker-alt"></i> Location: India</p>
+<div class="social-links">
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="copyright">
+<p>&copy; 2026 Bharathi Granites. All Rights Reserved. | Premium Black Granite Tiles Manufacturer</p>
+</div>
+</div>
+</footer>
+<script>
+function changeImage(thumbnail){document.getElementById('mainImage').src=thumbnail.src;document.querySelectorAll('.thumbnail').forEach(thumb=>{thumb.classList.remove('active');});thumbnail.classList.add('active');}
+document.querySelectorAll('.size-option').forEach(option=>{option.addEventListener('click',function(){document.querySelectorAll('.size-option').forEach(opt=>{opt.classList.remove('selected');});this.classList.add('selected');});});
+
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.remove('active');
+}
+
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobileMenu');
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  if (menu && !menu.contains(event.target) && !toggle.contains(event.target)) {
+    menu.classList.remove('active');
+  }
+});
+</script>
+<script src="../js/search-script.js"></script>
+</body>
+</html>

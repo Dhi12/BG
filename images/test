@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bharathi Granites | Premium Indian Black Granite Tiles</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --black: #0b0b0b;
+      --dark: #121212;
+      --grey: #9a9a9a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #eaeaea;
+      line-height: 1.7;
+      font-size: 20px;
+
+      background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url("images/black-granite.png");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      padding: 18px 60px;
+      background: rgba(0, 0, 0, 0.92);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.17);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Alex Brush', cursive;
+      font-size: 46px;
+      color: #d4af37;
+      letter-spacing: 2px;
+      transform: translateY(2px);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav ul li {
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #ddd;
+      cursor: pointer;
+    }
+
+    nav ul li:hover {
+      color: var(--gold);
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      min-height: 100vh;
+      padding: 120px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: transparent;
+      transition: background-image 1.2s ease-in-out;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--gold);
+      margin-bottom: 22px;
+      transition: opacity 0.6s ease;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #d0d0d0;
+      transition: opacity 0.6s ease;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 16px 42px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      background: var(--gold);
+      color: #000;
+    }
+
+    /* ================= SECTIONS ================= */
+
+    section {
+      padding: 90px 60px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.17);
+      text-align: center;
+
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(3px);
+    }
+
+    section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: var(--gold);
+      margin-bottom: 25px;
+
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    /* Gold lines */
+    section h3::before,
+    section h3::after {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 2px;
+
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(212,175,55,0.9),
+        transparent
+  );
+
+      box-shadow:
+        0 0 6px rgba(212,175,55,0.35);
+      opacity: 1;
+    }
+
+    section p {
+      max-width: 900px;
+      margin: 0 auto;
+      color: #cfcfcf;
+    }
+
+    /* ================= PRODUCTS ================= */
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .product {
+      background: var(--dark);
+      padding: 30px;
+      border: 1px solid #1f1f1f;
+    }
+
+    .product h4 {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #f2f2f2;
+    }
+
+    /* ================= QUALITY ================= */
+
+    .quality {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .quality div {
+      background: var(--dark);
+      padding: 30px;
+      border: 1px solid #1f1f1f;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      padding: 60px;
+      background: #000;
+      text-align: center;
+    }
+
+    footer h4 {
+      font-family: 'Alex Brush', cursive;
+      font-size: 26px;
+      color: var(--gold);
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 1024px) {
+      .products,
+      .quality {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header, section, .hero {
+        padding: 60px 30px;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .hero-title {
+        font-size: 38px;
+      }
+
+      .products,
+      .quality {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">Bharathi Granites</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Products</li>
+        <li>Exports</li>
+        <li>Sustainability</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title" id="heroTitle">
+        Premium Indian Black Granite Tiles
+      </h1>
+      <p id="heroText">
+        Crafted for luxury architectural and commercial spaces.
+        Precision-cut black granite tiles supplied to global markets
+        with uncompromising quality.
+      </p>
+      <a href="#" class="cta">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section>
+    <h3>Who We Are</h3>
+    <p>
+      With over <strong>25 years</strong> in the granite industry,
+      Bharathi Granites is a trusted Indian manufacturer specializing
+      in premium black granite tiles for high-end architectural and
+      commercial projects worldwide.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section>
+    <h3>Our Products</h3>
+    <div class="products">
+      <div class="product"><h4>Polished Black Granite Tiles</h4></div>
+      <div class="product"><h4>Honed & Matte Finish Tiles</h4></div>
+      <div class="product"><h4>Custom Cut-to-Size Tiles</h4></div>
+    </div>
+    <p style="margin-top:30px;color:var(--grey)">
+      Granite slabs are supplied strictly on request based on project requirements.
+    </p>
+  </section>
+
+  <section>
+    <h3>Global Exports</h3>
+    <p>
+      We export premium black granite tiles to Asia, the Middle East, Europe and America.
+      Our export-grade packaging ensures safety, precision and-ontime delivery.
+    </p>
+  </section>
+
+  <!-- QUALITY -->
+  <section>
+    <h3>Quality & Craftsmanship</h3>
+    <div class="quality">
+      <div><h4>Precision Processing</h4><p>Strict inspection at every stage.</p></div>
+      <div><h4>Export Packaging</h4><p>Designed for long-distance shipping.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Sustainable Practices</h3>
+    <p>
+      Responsible quarying, water recycling and waste management are integral to our long-term vision of sustainable stone manufacturing.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h4>Bharathi Granites</h4>
+    <p>Email: info@bharathigranites.com</p>
+    <p>India</p>
+  </footer>
+
+  <!-- HERO SLIDER SCRIPT -->
+  <script>
+    const slides = [
+      {
+        title: "Premium Indian Black Granite Tiles",
+        text: "Crafted for luxury architectural and commercial spaces. Precision-cut black granite tiles supplied to global markets with uncompromising quality.",
+        bg: "images/black-granite.png"
+      },
+      {
+        title: "Precision Granite Thresholds & Custom Profiles",
+        text: "Manufactured with 25+ years of expertise, our granite thresholds and custom profiles meet exacting global quality and durability standards.",
+        bg: "images/thresholds.png"
+      },
+      {
+        title: "25+ Years of Granite Manufacturing Excellence",
+        text: "A trusted Indian granite manufacturer supplying premium black granite tiles to architects, builders, and importers across global markets.",
+        bg: "images/black-granite.png"
+      }
+    ];
+
+    let current = 0;
+
+    const hero = document.querySelector(".hero");
+    const title = document.getElementById("heroTitle");
+    const text = document.getElementById("heroText");
+
+    setInterval(() => {
+      title.style.opacity = 0;
+      text.style.opacity = 0;
+
+      setTimeout(() => {
+        current = (current + 1) % slides.length;
+
+        hero.style.backgroundImage =
+          `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('${slides[current].bg}')`;
+
+        title.textContent = slides[current].title;
+        text.textContent = slides[current].text;
+
+        title.style.opacity = 1;
+        text.style.opacity = 1;
+      }, 700);
+    }, 5000);
+  </script>
+
+</body>
+</html>

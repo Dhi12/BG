@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Bharathi Granites - Premium Black Granite Tiles</title>
+<meta name="description" content="Get in touch with Bharathi Granites for premium black granite tiles. Contact us for quotes, inquiries, and custom orders.">
+
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/search-styles.css">
+
+<style>
+:root{
+  --gold:#d4af37;
+}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f7f7f5;
+  color:#333;
+}
+
+/* Container */
+.container{
+  max-width:820px;
+  margin:80px auto;
+  background:#ffffff;
+  padding:60px;
+  border:1px solid #e5e5e5;
+}
+
+/* Title */
+h2{
+  font-family:'Playfair Display',serif;
+  text-align:center;
+  font-size:38px;
+  margin-bottom:10px;
+  color:#111;
+}
+
+.subtitle{
+  text-align:center;
+  margin-bottom:40px;
+  color:#777;
+}
+
+textarea{
+  height:140px;
+}
+
+/* Form Button */
+form button{
+  width:100%;
+  padding:20px;
+  background:var(--gold);
+  color:#000;
+  border:2px solid var(--gold);
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:1.5px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  border-radius:8px;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  box-shadow:0 4px 15px rgba(212,175,55,0.3);
+}
+
+form button:hover{
+  background:transparent;
+  color:var(--gold);
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(212,175,55,0.4);
+}
+
+form input, form textarea, form select{
+  width:100%;
+  padding:16px;
+  margin-bottom:18px;
+  border:1px solid #e3e3e3;
+  font-size:15px;
+  transition:0.25s;
+  border-radius:6px;
+  font-family:'Inter',sans-serif;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus{
+  outline:none;
+  border-color:#d4af37;
+  box-shadow:0 0 0 3px rgba(212,175,55,0.15);
+}
+
+.whatsapp-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:18px;
+  padding:18px;
+  border:2px solid #25D366;
+  background:transparent;
+  color:#25D366;
+  text-decoration:none;
+  font-weight:600;
+  letter-spacing:1px;
+  transition:0.3s ease;
+  border-radius:8px;
+  font-size:15px;
+}
+
+.whatsapp-btn:hover{
+  background:#25D366;
+  color:#fff;
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(37,211,102,0.3);
+}
+
+/* HEADER */
+header{
+  padding:20px 60px;
+  background:rgba(234,234,234,0.98);
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:2px solid rgba(212,175,55,0.3);
+  backdrop-filter:blur(10px);
+  box-shadow:0 2px 20px rgba(0,0,0,0.1);
+}
+
+nav{display:flex;justify-content:space-between;align-items:center;}
+
+.logo{
+  font-family:'Alex Brush',cursive;
+  font-size:48px;
+  color:#d4af37;
+  text-decoration: none;
+  text-shadow:2px 2px 4px rgba(0,0,0,0.1);
+  transition:all 0.3s ease;
+}
+
+.logo:hover{
+  transform:scale(1.05);
+  color:#c49b2e;
+}
+
+nav ul{display:flex;gap:35px;list-style:none;}
+nav ul li{font-size:17px;position:relative;}
+nav ul li a{
+  color: #333;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:500;
+  transition:all 0.3s ease;
+  position:relative;
+  padding:8px 0;
+}
+
+nav ul li a::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0;
+  height:2px;
+  background:var(--gold);
+  transition:width 0.3s ease;
+}
+
+nav ul li a:hover{
+  color: var(--gold);
+}
+
+nav ul li a:hover::after{
+  width:100%;
+}
+
+.mobile-menu-toggle{
+  display:none;
+  font-size:28px;
+  color:#333;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{padding:16px 25px;}
+  .logo{font-size:36px;}
+  
+  .search-container{
+    display:none;
+  }
+  
+  nav ul{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:70%;
+    height:100vh;
+    background:rgba(234,234,234,0.98);
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    transition:right 0.3s ease;
+    backdrop-filter:blur(10px);
+    z-index:999;
+  }
+  
+  nav ul.active{
+    right:0;
+  }
+  
+  .mobile-menu-toggle{
+    display:block;
+    font-size:28px;
+    color:#333;
+    cursor:pointer;
+    z-index:1000;
+  }
+  
+  nav ul li a{font-size:18px;}
+  
+  .container{
+    margin:40px 20px;
+    padding:40px 30px;
+  }
+  
+  h2{font-size:32px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="../index.html" class="logo">Bharathi Granites</a>
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" 
+               id="searchInput" 
+               class="search-input" 
+               placeholder="Search products or pages..."
+               autocomplete="off">
+        <i class="fas fa-search search-icon"></i>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+</div>
+<div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+    <i class="fas fa-bars"></i>
+</div>
+<ul id="mobileMenu">
+<li><a href="../index.html" onclick="closeMobileMenu()">Home</a></li>
+<li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+<li><a href="products.html" onclick="closeMobileMenu()">Products</a></li>
+<li><a href="exports.html" onclick="closeMobileMenu()">Exports</a></li>
+<li><a href="contact.html" onclick="closeMobileMenu()">Contact US</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Contact US</h2>
+<p class="subtitle">We are pleased you are interested in learning more about our premium black granite products. We specialize in wholesale and export supply to dealers, retailers, architects, and builders worldwide. For product inquiries, custom orders, or if you would like to become a Bharathi Granites dealer or distributor, please submit the form below and we will be in touch with you shortly.</p>
+
+<form action="https://formsubmit.co/info@bharathigranites.com" method="POST">
+
+<input type="text" name="Company Name" placeholder="Company Name (Optional)">
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+<input type="text" name="First Name" placeholder="First Name *" required>
+<input type="text" name="Last Name" placeholder="Last Name *" required>
+</div>
+
+<input type="email" name="Email" placeholder="Email Address *" required>
+<input type="tel" name="Phone" placeholder="Phone Number">
+
+<select name="Product Interest" required>
+  <option value="">Product of Interest *</option>
+  <option>Black Granite Threshold</option>
+  <option>Double Beveled Threshold</option>
+  <option>Black Galaxy Granite</option>
+  <option>Premium Black - Polished</option>
+  <option>Premium Black - Honed</option>
+  <option>Premium Black - Leather</option>
+  <option>Premium Black - Flamed</option>
+  <option>Custom Product/Size</option>
+</select>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+<input type="text" name="Country" placeholder="Country *" required>
+<input type="text" name="City" placeholder="City">
+</div>
+
+<textarea name="Message" placeholder="Project Details: Required sizes, thickness, finish type, quantity, delivery timeline, destination port..." rows="6"></textarea>
+
+<button type="submit"><i class="fas fa-paper-plane"></i> SUBMIT QUOTE REQUEST</button>
+
+<a href="https://wa.me/+12054926798" class="whatsapp-btn" target="_blank">
+  <i class="fab fa-whatsapp"></i> Quick Quote via WhatsApp
+</a>
+</form>
+
+</div>
+
+<script>
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.remove('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobileMenu');
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  if (menu && !menu.contains(event.target) && !toggle.contains(event.target)) {
+    menu.classList.remove('active');
+  }
+});
+</script>
+
+<script src="../js/search-script.js"></script>
+
+</body>
+</html>

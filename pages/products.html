@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Black Granite Products | Bharathi Granites</title>
+<meta name="description" content="Explore our range of premium black granite tiles in various finishes - Polished, Honed, Leather, and Flamed. Available in multiple sizes for architectural projects.">
+
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/search-styles.css">
+
+<style>
+:root{
+  --gold:#d4af37;
+  --black:#0b0b0b;
+  --dark:#121212;
+  --grey:#9a9a9a;
+  --white:#eaeaea;
+  --light-gold: #f4e4c1;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Inter',sans-serif;
+  line-height:1.7;
+  font-size:18px;
+  background:
+  linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.98)),
+  url("../images/black-granite.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  color:#333;
+}
+
+/* HEADER */
+header{
+  padding:20px 60px;
+  background:rgba(234,234,234,0.98);
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:2px solid rgba(212,175,55,0.3);
+  backdrop-filter:blur(10px);
+  box-shadow:0 2px 20px rgba(0,0,0,0.1);
+}
+
+nav{display:flex;justify-content:space-between;align-items:center;}
+
+.logo{
+  font-family:'Alex Brush',cursive;
+  font-size:48px;
+  color:#d4af37;
+  text-decoration: none;
+  text-shadow:2px 2px 4px rgba(0,0,0,0.1);
+  transition:all 0.3s ease;
+}
+
+.logo:hover{
+  transform:scale(1.05);
+  color:#c49b2e;
+}
+
+nav ul{display:flex;gap:35px;list-style:none;}
+nav ul li{font-size:17px;position:relative;}
+nav ul li a{
+  color: #333;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:500;
+  transition:all 0.3s ease;
+  position:relative;
+  padding:8px 0;
+}
+
+nav ul li a::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0;
+  height:2px;
+  background:var(--gold);
+  transition:width 0.3s ease;
+}
+
+nav ul li a:hover{
+  color: var(--gold);
+}
+
+nav ul li a:hover::after{
+  width:100%;
+}
+
+.mobile-menu-toggle{
+  display:none;
+  font-size:28px;
+  color:#333;
+  cursor:pointer;
+}
+
+/* PAGE HERO */
+.page-hero{
+  text-align:center;
+  padding:60px 60px 50px;
+  background:linear-gradient(135deg, rgba(11,11,11,0.9) 0%, rgba(26,26,26,0.85) 100%);
+  border-bottom:3px solid var(--gold);
+}
+
+.page-hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:48px;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:15px;
+  text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page-hero p{
+  font-size:18px;
+  color:#ddd;
+  max-width:800px;
+  margin:0 auto;
+  line-height:1.7;
+}
+
+/* PRODUCTS SECTION */
+.products-section{
+  padding:60px 60px 80px;
+  max-width:1400px;
+  margin:0 auto;
+}
+
+.products-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap:40px;
+  margin-top:30px;
+}
+
+.product-card{
+  background:#fff;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  border:2px solid rgba(212,175,55,0.2);
+  transition:all 0.4s ease;
+  text-align:center;
+}
+
+.product-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 30px rgba(212,175,55,0.25);
+  border-color:var(--gold);
+}
+
+.product-card img{
+  width:100%;
+  max-width:320px;
+  height:280px;
+  object-fit:cover;
+  margin-bottom:30px;
+  border-radius:8px;
+  border:3px solid rgba(212,175,55,0.2);
+  transition:all 0.3s ease;
+}
+
+.product-card:hover img{
+  border-color:#ccc;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card h2{
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  font-weight:600;
+  color:#222;
+  margin-bottom:25px;
+  line-height:1.4;
+}
+
+/* SIZE VISUALS */
+.sizes-title{
+  font-size:17px;
+  font-weight:600;
+  color:var(--gold);
+  margin-bottom:20px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.size-container{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:20px;
+  max-width:400px;
+  margin:0 auto;
+}
+
+.size-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+
+.size-box{
+  border:2px solid #ddd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  color:#666;
+  background:linear-gradient(135deg, #f9f9f9 0%, #fff 100%);
+  transition:all 0.3s ease;
+  border-radius:4px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.size-item:hover .size-box{
+  border-color:var(--gold);
+  background:linear-gradient(135deg, #fff 0%, #fffef8 100%);
+  box-shadow:0 3px 10px rgba(212,175,55,0.15);
+}
+
+.size-item span{
+  font-size:14px;
+  font-weight:500;
+  color:#555;
+}
+
+/* SIZE PROPORTIONS */
+.size1{ width:170px; height:85px;}
+.size2{ width:90px; height:90px;}
+.size3{ width:120px; height:120px;}
+.size4{ width:160px; height:160px;}
+
+/* FOOTER */
+footer{
+  padding:80px 60px;
+  background:linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+  text-align:center;
+  color:#fff;
+  border-top:3px solid var(--gold);
+}
+
+footer h4{
+  font-family:'Alex Brush',cursive;
+  font-size:42px;
+  color:var(--gold);
+  margin-bottom:20px;
+}
+
+footer p{
+  color:#ccc;
+  margin:10px 0;
+  font-size:16px;
+}
+
+.footer-content{
+  max-width:600px;
+  margin:0 auto;
+}
+
+.social-links{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+}
+
+.social-links a{
+  color:var(--gold);
+  font-size:24px;
+  transition:all 0.3s ease;
+}
+
+.social-links a:hover{
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+.copyright{
+  margin-top:40px;
+  padding-top:30px;
+  border-top:1px solid rgba(212,175,55,0.2);
+  font-size:14px;
+  color:#888;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{padding:16px 25px;}
+  
+  .logo{font-size:36px;}
+  
+  nav ul{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:70%;
+    height:100vh;
+    background:rgba(234,234,234,0.98);
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    transition:right 0.3s ease;
+    backdrop-filter:blur(10px);
+    z-index:999;
+  }
+  
+  nav ul.active{
+    right:0;
+  }
+  
+  .mobile-menu-toggle{
+    display:block;
+    font-size:28px;
+    color:#333;
+    cursor:pointer;
+    z-index:1000;
+  }
+  
+  nav ul li a{font-size:18px;}
+  
+  .page-hero{padding:50px 25px 40px;}
+  .page-hero h1{font-size:32px;}
+  .page-hero p{font-size:16px;}
+  
+  .products-section{padding:50px 25px 60px;}
+  
+  .products-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+  
+  .product-card{padding:30px;}
+  .product-card h2{font-size:22px;}
+  
+  .size-container{
+    grid-template-columns:repeat(2, 1fr);
+    gap:15px;
+  }
+  
+  .size1{width:140px; height:70px;}
+  .size2{width:75px; height:75px;}
+  .size3{width:100px; height:100px;}
+  .size4{width:130px; height:130px;}
+  
+  footer{padding:60px 25px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="../index.html" class="logo">Bharathi Granites</a>
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" 
+               id="searchInput" 
+               class="search-input" 
+               placeholder="Search products or pages..."
+               autocomplete="off">
+        <i class="fas fa-search search-icon"></i>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+</div>
+<div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+    <i class="fas fa-bars"></i>
+</div>
+<ul id="mobileMenu">
+<li><a href="../index.html" onclick="closeMobileMenu()">Home</a></li>
+<li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+<li><a href="products.html" onclick="closeMobileMenu()">Products</a></li>
+<li><a href="exports.html" onclick="closeMobileMenu()">Exports</a></li>
+<li><a href="contact.html" onclick="closeMobileMenu()">Contact US</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="page-hero">
+<h1>Premium Black Granite Products</h1>
+<p>Discover our exquisite collection of premium black granite tiles available in multiple finishes and sizes. Each piece is meticulously crafted to meet the highest standards of quality and elegance for your architectural projects.</p>
+</section>
+
+<section class="products-section">
+<div class="products-grid">
+
+<!-- PRODUCT 1 -->
+<div class="product-card">
+    <a href="../products/product-black-granite-threshold.html" style="text-decoration:none; color:inherit;">
+    <img src="../images/Threshold4x36x.75.png" alt="Threshold Black Granite">
+    <h2>Black Granite Single Hollywood Threshold</h2>
+    <p class="sizes-title"><i class="fas fa-ruler-combined"></i> Available Sizes</p>
+    <div class="size-container">
+        <div class="size-item">
+            <div class="size-box size1"></div>
+            <span>610 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size2"></div>
+            <span>305 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size3"></div>
+            <span>400 × 400 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size4"></div>
+            <span>600 × 600 mm</span>
+        </div>
+    </div>
+    <button class="view-details-btn" style="margin-top:20px; padding:12px 30px; background:var(--gold); color:#000; border:none; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.3s ease;">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+    </a>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product-card">
+    <a href="../products/product-double-beveled-threshold.html" style="text-decoration:none; color:inherit;">
+    <img src="../images/Premium Black Double Beveled.png" alt="Premium Black Granite">
+    <h2>Premium Black Double Beveled Threshold</h2>
+    <p class="sizes-title"><i class="fas fa-ruler-combined"></i> Available Sizes</p>
+    <div class="size-container">
+        <div class="size-item">
+            <div class="size-box size1"></div>
+            <span>610 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size2"></div>
+            <span>305 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size3"></div>
+            <span>400 × 400 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size4"></div>
+            <span>600 × 600 mm</span>
+        </div>
+    </div>
+    <button class="view-details-btn" style="margin-top:20px; padding:12px 30px; background:var(--gold); color:#000; border:none; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.3s ease;">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+    </a>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product-card">
+    <a href="../products/product-black-galaxy.html" style="text-decoration:none; color:inherit;">
+    <img src="../images/BlackGalaxy.png" alt="Black Galaxy Granite">
+    <h2>Black Galaxy Polished Granite Tile</h2>
+    <p class="sizes-title"><i class="fas fa-ruler-combined"></i> Available Sizes</p>
+    <div class="size-container">
+        <div class="size-item">
+            <div class="size-box size1"></div>
+            <span>610 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size2"></div>
+            <span>305 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size3"></div>
+            <span>400 × 400 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size4"></div>
+            <span>600 × 600 mm</span>
+        </div>
+    </div>
+    <button class="view-details-btn" style="margin-top:20px; padding:12px 30px; background:var(--gold); color:#000; border:none; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.3s ease;">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+    </a>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="product-card">
+    <a href="../products/product-premium-black-polished.html" style="text-decoration:none; color:inherit;">
+    <img src="../images/Premium-black.png" alt="Premium Black Granite">
+    <h2>Premium Black – Polished Finish</h2>
+    <p class="sizes-title"><i class="fas fa-ruler-combined"></i> Available Sizes</p>
+    <div class="size-container">
+        <div class="size-item">
+            <div class="size-box size1"></div>
+            <span>610 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size2"></div>
+            <span>305 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size3"></div>
+            <span>400 × 400 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size4"></div>
+            <span>600 × 600 mm</span>
+        </div>
+    </div>
+    <button class="view-details-btn" style="margin-top:20px; padding:12px 30px; background:var(--gold); color:#000; border:none; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.3s ease;">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+    </a>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="product-card">
+    <a href="../products/product-premium-black-honed.html" style="text-decoration:none; color:inherit;">
+    <img src="../images/HonedPolish.png" alt="Honed Black Granite">
+    <h2>Premium Black – Honed Finish</h2>
+    <p class="sizes-title"><i class="fas fa-ruler-combined"></i> Available Sizes</p>
+    <div class="size-container">
+        <div class="size-item">
+            <div class="size-box size1"></div>
+            <span>610 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size2"></div>
+            <span>305 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size3"></div>
+            <span>400 × 400 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size4"></div>
+            <span>600 × 600 mm</span>
+        </div>
+    </div>
+    <button class="view-details-btn" style="margin-top:20px; padding:12px 30px; background:var(--gold); color:#000; border:none; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.3s ease;">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+    </a>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product-card">
+    <a href="../products/product-premium-black-leather.html" style="text-decoration:none; color:inherit;">
+    <img src="../images/Leather.png" alt="Leather Black Granite">
+    <h2>Premium Black – Leather Finish</h2>
+    <p class="sizes-title"><i class="fas fa-ruler-combined"></i> Available Sizes</p>
+    <div class="size-container">
+        <div class="size-item">
+            <div class="size-box size1"></div>
+            <span>610 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size2"></div>
+            <span>305 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size3"></div>
+            <span>400 × 400 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size4"></div>
+            <span>600 × 600 mm</span>
+        </div>
+    </div>
+    <button class="view-details-btn" style="margin-top:20px; padding:12px 30px; background:var(--gold); color:#000; border:none; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.3s ease;">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+    </a>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="product-card">
+    <a href="../products/product-premium-black-flamed.html" style="text-decoration:none; color:inherit;">
+    <img src="../images/Flamed.png" alt="Flamed Black Granite">
+    <h2>Premium Black – Flamed Finish</h2>
+    <p class="sizes-title"><i class="fas fa-ruler-combined"></i> Available Sizes</p>
+    <div class="size-container">
+        <div class="size-item">
+            <div class="size-box size1"></div>
+            <span>610 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size2"></div>
+            <span>305 × 305 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size3"></div>
+            <span>400 × 400 mm</span>
+        </div>
+        <div class="size-item">
+            <div class="size-box size4"></div>
+            <span>600 × 600 mm</span>
+        </div>
+    </div>
+    <button class="view-details-btn" style="margin-top:20px; padding:12px 30px; background:var(--gold); color:#000; border:none; border-radius:8px; cursor:pointer; font-weight:600; transition:all 0.3s ease;">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+    </a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="footer-content">
+<h4>Bharathi Granites</h4>
+<p><i class="fas fa-envelope"></i> Email: info@bharathigranites.com</p>
+<p><i class="fas fa-phone"></i> Phone: +91 XXXX XXXXXX</p>
+<p><i class="fas fa-map-marker-alt"></i> Location: India</p>
+
+<div class="social-links">
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+
+<div class="copyright">
+<p>&copy; 2026 Bharathi Granites. All Rights Reserved. | Premium Black Granite Tiles Manufacturer</p>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.remove('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobileMenu');
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  if (menu && !menu.contains(event.target) && !toggle.contains(event.target)) {
+    menu.classList.remove('active');
+  }
+});
+</script>
+
+<script src="../js/search-script.js"></script>
+
+</body>
+</html>
